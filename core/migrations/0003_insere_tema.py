@@ -3,7 +3,7 @@
 from django.db import migrations
 
 def insere_tema(apps, schema_editor):
-    Tema = apps.get_model('palavra', 'Tema')
+    Tema = apps.get_model('core', 'Tema')
     Tema.objects.create(
         descricao='Geral'
     )
@@ -11,7 +11,7 @@ def insere_tema(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('palavra', '0002_tema'),
+        ('core', '0002_tema'),
     ]
 
     operations = [

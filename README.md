@@ -16,8 +16,8 @@ O jogo fornece feedback sobre a precisão das tentativas para ajudar os jogadore
 
 ### Clonando o repositório
 ```bash
-git clone https://github.com/leticia-pontes/eng-software-3bcc
-cd eng-software-3bcc
+git clone https://github.com/leticia-pontes/PALAVRA
+cd PALAVRA
 ```
 
 ### Com Docker
@@ -54,7 +54,7 @@ cd eng-software-3bcc
    ```
 4. Execute o script de inserção no banco de dados:
    ```bash
-   python palavra/criar_dicionario.py
+   python criar_dicionario.py
    ```
 5. Execute o servidor de desenvolvimento do Django:
    ```bash

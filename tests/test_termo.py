@@ -1,5 +1,5 @@
 from django.test import TestCase
-from palavra.termo import Termo, Feedback, InvalidAttempt
+from core.termo import Termo, Feedback, InvalidAttempt
 
 
 class TermoTest(TestCase):

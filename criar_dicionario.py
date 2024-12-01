@@ -2,18 +2,18 @@ import os
 import sys
 import django
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "termooo.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "palavra.settings")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 
 django.setup()
 
-from palavra.models import Palavra, Tema
+from core.models import Palavra, Tema
 
 default_tema, _ = Tema.objects.get_or_create(descricao='Geral')
 
-caminho = BASE_DIR + '/palavra/'
+caminho = BASE_DIR + '\\PALAVRA\\'
 
 with open(caminho + 'palavras.txt', 'r', encoding='utf-8') as palavras_file:
     for palavra in palavras_file:
