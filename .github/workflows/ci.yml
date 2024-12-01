@@ -37,7 +37,7 @@ jobs:
       
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.DOCKER_REGISTRY }}/palavra:${{ github.sha }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/palavra:${{ github.sha }}
 
       - name: Post-Build Cleanup
         run: |
