@@ -2,14 +2,14 @@
 # Omitir diretórios ou arquivos específicos
 omit =
     manage.py
-    termooo/asgi.py
-    termooo/wsgi.py
-    termooo/*
-    palavra/migrations/*
-    palavra/templatetags/__init__.py
+    palavra/asgi.py
+    palavra/wsgi.py
+    palavra/*
+    core/migrations/*
+    core/templatetags/__init__.py
     */__init__.py
     
-include = palavra/*
+include = core/*
 
 [report]
 # Linhas para ignorar na contagem de cobertura

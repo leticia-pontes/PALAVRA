@@ -2,12 +2,12 @@ from django.db import migrations, models
 import os
 
 def insere_palavras(apps, schema_editor):
-    Palavra = apps.get_model('palavra', 'Palavra')
-    Tema = apps.get_model('palavra', 'Tema')
+    Palavra = apps.get_model('core', 'Palavra')
+    Tema = apps.get_model('core', 'Tema')
 
     default_tema, _ = Tema.objects.get_or_create(descricao='Geral')
 
-    with open('palavra/palavras.txt', 'r') as dicionario:
+    with open('palavras.txt', 'r') as dicionario:
         for palavra in dicionario:
             p = Palavra()
             p.descricao = palavra.strip()
@@ -17,7 +17,7 @@ def insere_palavras(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('palavra', '0004_palavra'),
+        ('core', '0004_palavra'),
     ]
 
     operations = [

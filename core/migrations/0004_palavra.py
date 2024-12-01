@@ -7,7 +7,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('palavra', '0003_insere_tema'),
+        ('core', '0003_insere_tema'),
     ]
 
     operations = [
@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('descricao', models.CharField(max_length=9)),
                 ('dificuldade', models.CharField(choices=[('Fácil', 'Fácil'), ('Médio', 'Médio'), ('Difícil', 'Difícil')], max_length=10)),
-                ('tema', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='palavra.tema')),
+                ('tema', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='core.tema')),
             ],
         ),
     ]

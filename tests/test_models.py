@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.apps import apps
-from palavra.models import Tema, Palavra, Usuario
+from core.models import Tema, Palavra, Usuario
 
 class UsuarioModelTest(TestCase):
 
