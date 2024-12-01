@@ -33,7 +33,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_REGISTRY }}/palavra:${{ github.sha }} .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/palavra:${{ github.sha }} .
       
       - name: Push Docker image
         run: |
