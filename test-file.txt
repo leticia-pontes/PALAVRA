@@ -1,2 +1,1 @@
 Testando CI/CD no GitHub Actions
-Teste 2
