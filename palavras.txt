@@ -70,3 +70,11 @@ ditar
 dizer
 forno
 braco
+reino
+censo
+canto
+canta
+clero
+claro
+viver
+morte
