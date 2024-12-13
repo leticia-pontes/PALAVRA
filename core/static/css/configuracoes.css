@@ -102,10 +102,10 @@
     flex-direction: column;
 }
 
-.configuracoes__form-control input{
+.configuracoes__form-control input {
     max-width: 650px;
     border-radius: 5px;
-    padding: 0 32px;
+    padding: 0 20px;
     box-shadow: var(--borda-box-shadow);
     height: 50px;
 }
