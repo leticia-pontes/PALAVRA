@@ -110,6 +110,17 @@
     height: 50px;
 }
 
+.circulo-usuario,
+.usuario__imagem {
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
+.form-group .circulo-usuario img {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
 .configuracoes__form-control input::placeholder{
     color: #999;
 }

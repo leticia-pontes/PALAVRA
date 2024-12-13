@@ -51,18 +51,11 @@ class CadastroForm(UserCreationForm):
         return email
 
 class UserInfoForm(forms.ModelForm):
+
     foto_perfil = forms.ImageField(widget=forms.FileInput())
 
     username = forms.CharField(label='Nome de Usuário', widget=forms.TextInput(attrs={
         'placeholder': 'Nome de Usuário',
-        'class': 'form-control'
-    }))
-    email = forms.EmailField(label='E-mail', widget=forms.EmailInput(attrs={
-        'placeholder': 'E-mail',
-        'class': 'form-control'
-    }))
-    password1 = forms.CharField(label='Senha', widget=forms.PasswordInput(attrs={
-        'placeholder': 'Senha',
         'class': 'form-control'
     }))
 
