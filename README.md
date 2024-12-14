@@ -24,11 +24,11 @@ cd PALAVRA
 
 1. Construa a imagem Docker:
    ```bash
-   docker build -t palavra .
+   docker build -t palavra-image .
    ```
 2. Execute o container:
    ```bash
-   docker run -d -p 5200:5200 --name palavra-container palavra
+   docker run -d -p 5200:5200 --name palavra-container palavra-image
    ```
 3. Acesse o aplicativo em seu navegador:
    ```bash
