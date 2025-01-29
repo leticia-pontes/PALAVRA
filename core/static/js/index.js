@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const elemento = document.getElementById("texto-animado");
-    const texto = elemento.textContent.trim(); // Captura o texto do elemento
-    elemento.textContent = ""; // Limpa o conteúdo do elemento para começar o efeito
+    const texto = elemento.textContent.trim();
+    elemento.textContent = "";
 
     let indice = 0; // Índice para controlar a posição do caractere atual
 

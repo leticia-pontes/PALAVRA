@@ -24,13 +24,13 @@
     gap: 24px;
 }
 
-.header__logo {
+.header__content__logo {
     display: flex;
     justify-content: center;
     flex-grow: 1;
 }
 
-.header__logo a span {
+.header__content__logo a span {
     font-size: 34px;
     color: var(--cor-primaria);
     line-height: 30px;
