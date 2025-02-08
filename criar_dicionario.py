@@ -13,7 +13,7 @@ from core.models import Palavra, Tema
 
 default_tema, _ = Tema.objects.get_or_create(descricao='Geral')
 
-caminho = BASE_DIR + '\\PALAVRA\\'
+caminho = BASE_DIR + '/palavra/'
 
 with open(caminho + 'palavras.txt', 'r', encoding='utf-8') as palavras_file:
     for palavra in palavras_file:
