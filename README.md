@@ -1,16 +1,8 @@
 # PALAVRA
-Palavra é um jogo baseado na web, inspirado no popular jogo online Wordle (ou term.ooo).<br>
-No Palavra, os jogadores devem adivinhar uma palavra oculta dentro de um número limitado de tentativas.<br>
+**PALAVRA** é um jogo baseado na web, inspirado no popular jogo online Wordle (ou term.ooo).<br>
+
+No **PALAVRA**, os jogadores devem adivinhar uma palavra oculta dentro de um número limitado de tentativas.<br>
 O jogo fornece feedback sobre a precisão das tentativas para ajudar os jogadores a deduzirem a palavra correta.
-
-#### NENHUMA ALTERAÇÃO PODE SER FEITA NESTE PROJETO SEM A DEVIDA COMUNICAÇÃO E AUTORIZAÇÃO.
-
-## Funcionalidades
-- Interface interativa e amigável
-- Feedback em tempo real sobre as tentativas
-- Jogabilidade simples e envolvente
-- Possibilidade de salvar a evolução no jogo
-- Sistema de conquistas e recompensas
 
 ## Instalação
 
@@ -28,7 +20,7 @@ cd PALAVRA
    ```
 2. Execute o container:
    ```bash
-   docker run -d -p 5200:5200 --name palavra-container palavra-image
+   docker run -d -p 5200:5200 --name palavra-service palavra-image
    ```
 3. Acesse o aplicativo em seu navegador:
    ```bash
@@ -87,13 +79,10 @@ coverage report
 ## Pipeline de CI/CD
 O projeto utiliza o GitLab CI/CD para integração e implantação contínuas. O pipeline está definido no arquivo `.gitlab-ci.yml` e inclui etapas para testes, construção e implantação da aplicação.
 
-## Docker e Registro de Imagens
-O projeto é containerizado usando Docker. A imagem Docker é construída e armazenada no Registro de Contêineres do GitLab.
-
 ## Licença
 Nenhuma (até o momento).
 
-## Contribuidores (integrantes do grupo)
+## Contribuidores
 - [Beatriz Barbosa Bandeira](https://github.com/BiabBandeira)
 - [Giovana Cristina dos Santos Castro](https://github.com/GiCCastro)
 - [Giovana dos Santos Oliveira](https://github.com/giovanaoliveira-14)
@@ -102,3 +91,5 @@ Nenhuma (até o momento).
 
 ## Agradecimentos
 - Inspirado nos originais [Wordle](https://www.nytimes.com/games/wordle/index.html) e [Termo](https://term.ooo/)
+---
+#### *NENHUMA ALTERAÇÃO PODE SER FEITA NESTE PROJETO SEM A DEVIDA COMUNICAÇÃO E AUTORIZAÇÃO.*
