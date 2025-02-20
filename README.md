@@ -4,6 +4,14 @@
 No **PALAVRA**, os jogadores devem adivinhar uma palavra oculta dentro de um número limitado de tentativas.<br>
 O jogo fornece feedback sobre a precisão das tentativas para ajudar os jogadores a deduzirem a palavra correta.
 
+<div align="center">
+   
+   ![Landing Page](docs/images/LandingPage.png)<br>
+
+   ![Game Tips](docs/images/GameTips.png)
+
+</div>
+
 ## Instalação
 
 ### Clonando o repositório
