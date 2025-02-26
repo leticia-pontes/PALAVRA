@@ -1,36 +1,50 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/026675cdf7.js" crossorigin="anonymous"></script>
+        <title>Login</title>
+        
         <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/login-cadastro.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
         <link rel="icon" href="{% static 'img/assets/Logo - Wordle Vetor.png' %}">
-        <title>Login</title>
+        
+        <script src="https://kit.fontawesome.com/026675cdf7.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="header">
-            <a href="{% url 'index' %}" class="navbar-brand">Palavra</a>
-        </nav>
+        <header class="cabecalho">
+            <nav class="cabecalho__navegacao">
+                <a href="{% url 'index' %}" class="cabecalho__logo">Palavra</a>
+            </nav>
+        </header>
 
-        <main>
-            <div class="container_main">
-                <div class="content">
-                    <div class="login">
-                        <h1>entre</h1>
-                        <p>Que bom vê-lo(a) novamente! entre e bora adivinhar uma palavrinha</p><br>
-                        <form method="post" class="form-control">
-                            {% csrf_token %}
-                            {{ form.as_p }}
-                            <button type="submit" class="pagina__botao">Entrar</button>
-                        </form>
-                        {% if error %}
-                            <p class="login-error" id="login-error">{{ error }}</p>
-                        {% endif %}
-                    </div>
+        <main class="conteudo">
+            <div class="conteudo__container">
+                <div class="conteudo__texto-informativo">
+                    <h1>Entre</h1>
+                    <p class="conteudo__texto-informativo__subtitulo">Que bom vê-lo(a) novamente! entre e bora <br>adivinhar uma palavrinha</p>&nbsp;
+                    <p class="conteudo__texto-informativo__subtitulo">Ainda não tem uma conta? <a href="{% url 'cadastrar' %}">Cadastre-se</a></p>
+                </div>
+                <div class="conteudo__cadastro">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="conteudo__cadastro__input">
+                            {{ form.username }}
+                            <div class="cadastro__error">{{ form.username.errors }}</div>
+                        </div>
+                        <div class="conteudo__cadastro__input">
+                            {{ form.password }}
+                            <div class="cadastro__error">{{ form.password.errors }}</div>
+                        </div>
+
+                        <button class="pagina__botao" type="submit">Entrar</button>
+                    </form>
+                    {% if error %}
+                        <p class="login-error" id="login-error">{{ error }}</p>
+                    {% endif %}
                 </div>
             </div>
         </main>
